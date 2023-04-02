@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body dir="ltr">
+
+
+
+
+    <header class="d-flex justify-content-center  position-fixed  col-12 z-3   top-0 bg-white ">
+        <section class="container d-flex justify-content-center flex-column h-100">
+            <div class="row justify-content-center h-100  ">
+                <div class="col-12 col-lg-11  h-100 d-flex flex-column justify-content-center mt-5 mt-lg-0"
+                    id="headrtop">
+                    <div class="row  p-3  ">
+
+                        <div class="col-4 col-lg-3  h-100 d-flex ">
+                            <div class="col-2  col-lg-2  d-flex justify-content-center align-items-center p-1  ">
+                                <i class="bi bi-search fs-5 fs-lg-6"></i>
+                            </div>
+                            <div class="d-none d-lg-flex col-lg-10 " dir="rtl">
+                                <input type="search" id="sea" placeholder='جستجوکنید...' class="col-12 border-0 ">
+                            </div>
+                        </div>
+
+                        <div class="col-4 d-flex  d-lg-none  h-100 justify-content-center ">
+                            <figure class="col-12   col-md-9  d-flex justify-content-center align-items-center">
+                                <img src="asset/img/logo-landscape.png" alt="" class="col-9">
+                            </figure>
+                        </div>
+                        <div
+                            class="col-4  d-flex flex-wrap justify-content-center justify-content-md-end  ali d-lg-none   h-100 ">
+                            <div class="col-4 d-flex btnHam  justify-content-center align-items-center" id="toggle"
+                                onclick="_dropMenu(this)">
+                                <span class="fs-2 "></span>
+                                <span class="fs-2 "></span>
+                                <span class="fs-2 "></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row  border-top justify-content-end " id="menu">
+                        <div class="col-12 ">
+                            <ul class="d-none  d-lg-flex d-flex  col-12 justify-content-start flex-row-reverse  ">
+
+                                <li class="list-group-item col-1  position-relative ">
+                                    <i class="bi bi-chevron-down  position-absolute "> </i>
+
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">خدمات
+                                        بانکی</a>
+                                    <!-- <ul class="col-12 position-relative z-3">
+                                        <li class="col-12">Lorem.</li>
+                                        <li class="col-12">Lorem.</li>
+                                        <li class="col-12">Lorem.</li>
+                                        <li class="col-12">Lorem.</li>
+                                        <li class="col-12">Lorem.</li>
+                                        <li class="col-12">Lorem.</li>
+                                        <li class="col-12">Lorem.</li>
+                                    </ul> -->
+
+                                </li>
+
+                                <li class="list-group-item col-2  position-relative">
+
+                                    <i class="bi bi-chevron-down  position-absolute "></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">بانکداری
+                                        شرکتی
+                                        و تجاری</a>
+                                </li>
+
+                                <li class="list-group-item col-2  position-relative">
+                                    <i class="bi bi-chevron-down  position-absolute "></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">بانکداری
+                                        الکترونیکی</a>
+                                </li>
+
+
+                                <li class="list-group-item col-1  me-1  position-relative">
+                                    <i class="bi bi-chevron-down   position-absolute "></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">ابزارها</a>
+                                </li>
+
+                                <li class="list-group-item col-1   me-2        osition-relative">
+                                    <i class="bi bi-chevron-down position-absolute "></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">درباره
+                                        آینده</a>
+                                </li>
+
+                                <li class="list-group-item col-1  me-4 position-relative">
+                                    <i class="bi bi-chevron-down   position-absolute "></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">تماس با
+                                        آینده</a>
+                                </li>
+                            </ul>
+
+
+
+                            <ul id="mobile" class="row  menuMobile     d-flex d-lg-none justify-content-end ">
+                                <li
+                                    class="list-group-item col-6 ms-5    position-relative border d-flex justify-content-end bg-white    ">
+                                    <i class="bi bi-chevron-left"></i>
+
+                                    <a href="" class="text-decoration-none font-weight-bolder text-black">
+                                        خدمات بانکی
+
+                                    </a>
+
+
+                                </li>
+                                <li
+                                    class="list-group-item col-6 ms-5   position-relative border-1 border-bottom border d-flex justify-content-end bg-white   ">
+                                    <i class="bi bi-chevron-left"></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">
+                                        بانکداری شرکتی و تجاری
+                                    </a>
+                                </li>
+                                <li
+                                    class="list-group-item col-6 ms-5   position-relative border-1 border-bottom border d-flex justify-content-end bg-white   ">
+                                    <i class="bi bi-chevron-left"></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">
+                                        بانکداری الکترونیکی
+                                    </a>
+                                </li>
+                                <li
+                                    class="list-group-item col-6 ms-5    position-relative border-1 border-bottom border d-flex justify-content-end bg-white   ">
+                                    <i class="bi bi-chevron-left"></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">
+                                        ابزارها
+                                    </a>
+                                </li>
+                                <li
+                                    class="list-group-item col-6 ms-5    position-relative border-1 border-bottom border d-flex justify-content-end bg-white   ">
+                                    <i class="bi bi-chevron-left"></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">
+                                        درباره آینده
+                                    </a>
+                                </li>
+                                <li
+                                    class="list-group-item col-6 ms-5    position-relative border d-flex justify-content-end bg-white   ">
+                                    <i class="bi bi-chevron-left"></i>
+                                    <a href="" class="text-decoration-none font-weight-bolder  text-black">
+                                        تماس با آینده
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex    col-lg-1  h-100 " id="logo">
+                    <figure class="col-12  h-100 pt-1">
+                        <img src="asset/img/logo-100-100.png" alt="" class="col-12 h-100">
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+
+
+
+    <main class="mt-5 ">
+        <section class="container-fluid  ">
+            <div class="window row  position-relative  ">
+                <img src="asset/img/1.jpg" alt="" class="col-12 h-100">
+
+                <ul class=" position-absolute  col-2 d-flex justify-content-center">
+                    <li onclick="_slide(this)" class="col-1 list-group-item mx-1 ">
+                        <span class="d-flex p-1 bg-light rounded-2">
+                            <img src="asset/img/1.jpg" alt="" class="col-1 opacity-0">
+                        </span>
+
+                    </li>
+                    <li onclick="_slide(this)" class="col-1 list-group-item mx-1 ">
+                        <span class="d-flex p-1 bg-light rounded-2">
+                            <img src="asset/img/2.jpg" alt="" class="col-1 opacity-0">
+                        </span>
+                    </li>
+                    <li onclick="_slide(this)" class="col-1 list-group-item mx-1 ">
+                        <span class="d-flex p-1 bg-light rounded-2">
+                            <img src="asset/img/3.jpg" alt="" class="col-1 opacity-0">
+                        </span>
+                    </li>
+                    <li onclick="_slide(this)" class="col-1 list-group-item mx-1 ">
+                        <span class="d-flex p-1 bg-light rounded-2">
+                            <img src="asset/img/4.jpg" alt="" class="col-1 opacity-0">
+                        </span>
+                    </li>
+                    <li onclick="_slide(this)" class="col-1 list-group-item mx-1 ">
+                        <span class="d-flex p-1 bg-light rounded-2">
+                            <img src="asset/img/5.jpg" alt="" class="col-1 opacity-0">
+                        </span>
+                    </li>
+                    <li onclick="_slide(this)" class="col-1 list-group-item mx-1 ">
+                        <span class="d-flex p-1 bg-light rounded-2">
+                            <img src="asset/img/6.jpg" alt="" class="col-1 opacity-0">
+                        </span>
+                    </li>
+                    <li onclick="_slide(this)" class="col-1 list-group-item mx-1 ">
+                        <span class="d-flex p-1 bg-light rounded-2">
+                            <img src="asset/img/7.jpg" alt="" class="col-1 opacity-0">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container mx-auto    ElectronicServices">
+            <div class="row mt-5">
+                <h1 class="col-12 text-center ">خدمات الکترونیکی</h1>
+            </div>
+            <div class="row   d-flex flex-wrap">
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        سفته و برات الکترونیکی
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/cheque.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center ">
+                        سنجش امید آینده
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/sanjesh.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        باشگاه مشتریان
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/club.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="  col-6 col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        همراه کارت
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/mobile-bank.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="  col-6 col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        تلفن بانک
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/telephon-bank.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class=" d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3 ">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        آبانک
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/abank.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        سامانه هدف
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/goal.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3 ">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        پیشخوان مجازی
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/counter.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        رمز یکبار مصرف
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/otp.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        محاسبه شبا
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/sheba.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        سامانه کیلید
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/kilid.png" alt="">
+                    </div>
+
+                </a>
+                <a href="#" class="d-none d-md-flex  col-md-3  col-lg-2      d-flex  text-decoration-none  my-3 ">
+                    <div class="col-6 d-flex justify-content-center align-items-center text-center">
+                        کارت ها
+                    </div>
+                    <div class=" col-6">
+                        <img src="asset/img/card.png" alt="">
+                    </div>
+
+                </a>
+            </div>
+
+        </section>
+
+        <!-- <section class="container-fluid mx-auto ">
+
+            <div class="  col-12 ">
+
+
+
+                <div class="row box1-FutureBankNews h-25">
+                    <svg>
+                        <ellipse cx="50%" cy="-4%" rx="50%" ry="50%" />
+                    </svg>
+                </div>
+
+
+
+
+            </div>
+
+
+        </section> -->
+
+        <section class="container-fluid FutureBankNews">
+            <div class="row box2-FutureBankNews h-50 container mx-auto">
+
+                <div class="col-12 col-lg-6 py-5">
+
+                    <div class="row justify-content-center align-items-center text-center  py-5">
+                        <h1 class="font-weight-bolder col   ">اخبار بانک آینده</h1>
+                    </div>
+
+
+                    <div class="row  justify-content-start pe-md-3 chart">
+                        <div class="col-12  ">
+
+                            <a href="#" class="row text-decoration-none text-white px-2  py-2 ">
+                                <div class="col-12 ">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-end ">
+                                            <p class="col-12 d-flex justify-content-end align-items-center text-end">
+                                                آگهی
+                                                نرخ حق‌الوکاله سپرده‌ها در سال 1402</p>
+                                        </div>
+                                    </div>
+                                    <div class="row  flex-wrap">
+                                        <div class="col-4  col-md-2 position-relative     text-center">
+                                            1401/12/28</div>
+                                        <div
+                                            class="col-8 col-md-10  d-flex justify-content-center align-items-center text-end">
+                                            <span class="d-flex border-1 border col-12"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </a>
+                            <a href="#" class="row text-decoration-none text-white px-2  py-2 ">
+                                <div class="col-12 ">
+                                    <div class="row">
+                                        <div class="col-12 d-flex  ">
+                                            <p class="col-12 d-flex justify-content-end align-items-center text-end">
+                                                تندیس
+                                                «مشتری‌مداری» به ارتباط فردا رسید</p>
+                                        </div>
+                                    </div>
+                                    <div class="row  flex-wrap">
+                                        <div class="col-4  col-md-2 position-relative    text-center">
+                                            1401/12/23</div>
+                                        <div class="col-8 col-md-10  d-flex justify-content-center align-items-center">
+                                            <span class="d-flex border-1 border col-12"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </a>
+                            <a href="#" class="row text-decoration-none text-white px-2  py-2 ">
+                                <div class="col-12 ">
+                                    <div class="row">
+                                        <div class="col-12 d-flex  ">
+                                            <p class="col-12 d-flex justify-content-end align-items-center text-end">
+                                                قدردانی
+                                                صندوق اشتغال و کارآفرینی ایثارگران از بانک آینده
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row  flex-wrap">
+                                        <div class="col-4  col-md-2 position-relative   text-center">
+                                            1401/12/22</div>
+                                        <div class="col-8 col-md-10  d-flex justify-content-center align-items-center">
+                                            <span class="d-flex border-1 border col-12"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </a>
+                            <a href="#" class="row text-decoration-none text-white px-2  py-2 ">
+                                <div class="col-12 ">
+                                    <div class="row">
+                                        <div class="col-12 d-flex  ">
+                                            <p class="col-12 d-flex justify-content-end align-items-center text-end">
+                                                کارت‌های هدیه بانک آینده؛ برای هر فرد و هر مناسبت؛ لحظات خوشایند
+                                                زندگی را به عزیزان خود هدیه دهید
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row  flex-wrap">
+                                        <div class="col-4  col-md-2 position-relative    text-center">
+                                            1401/12/21</div>
+                                        <div class="col-8 col-md-10  d-flex justify-content-center align-items-center">
+                                            <span class="d-flex border-1 border col-12"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </a>
+                            <a href="#" class="row text-decoration-none text-white px-2 py-2 ">
+                                <div class="col-12 ">
+                                    <div class="row">
+                                        <div class="col-12 d-flex  ">
+                                            <p class="col-12 d-flex justify-content-end align-items-center text-end">
+                                                افشاهای
+                                                املاک بانک آینده در سامانه کدال ادامه دارد؛ دارایی‌های دیگر شرکت‌های
+                                                بانک آینده افشا شد.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row  flex-wrap">
+                                        <div class="col-4  col-md-2 position-relative   text-center">
+                                            1401/12/20</div>
+                                        <div class="col-8 col-md-10  d-flex justify-content-center align-items-center">
+                                            <span class="d-flex border-1 border col-12"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </a>
+                            <a href="#" class="row text-decoration-none text-white px-2  py-2 ">
+                                <div class="col-12 ">
+                                    <div class="row">
+                                        <div class="col-12 d-flex ">
+                                            <p class="col-12 d-flex justify-content-end align-items-center text-end">
+                                                اعلام
+                                                ساعات کاری بانک آینده در روزهای پایانی سال و نوروز
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row  flex-wrap">
+                                        <div class="col-4  col-md-2 position-relative   text-center ">
+                                            1401/12/18</div>
+                                        <div class="col-8 col-md-10  d-flex justify-content-center align-items-center">
+                                            <span class="d-flex border-1 border col-12"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </a>
+
+
+                            <div class="row my-2">
+                                <div class="col-12 btn-newsArchive ">
+                                    <span class="d-flex  col-3 col-md-2 py-2">آرشیو خبر</span>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- vasat -->
+                <div class="col-12 col-lg-6   py-5 ps">
+
+                    <section class="row ps-lg-3">
+                        <section class="col-12 d-none d-lg-flex py-5 " id="sec-A">
+
+                            <!-- *****img1 -->
+                            <a class="col-lg-6 d-flex   text-decoration-none flex-column  " id="img1-News">
+                                <div class="card  rounded-3 ">
+                                    <div class="front col-12 rounded-3">
+                                        <img src="asset/img/8.jpg" alt="" class="col-12 rounded-3 h-100 ">
+
+                                    </div>
+                                    <div class=" back col-12rounded-3">
+                                        <img src="asset/img/9.jpg" alt="" class="col-12  rounded-3">
+                                        <div class=" rounded-3 ">
+                                            <span class="d-flex  text-white z-3 text-center">
+                                                بانک آینده با هدف رونق تولید و کسب‌وکار و هم‌چنین پاسخ‌گویی به نیازهای
+                                                اساسی هم‌میهنان گرامی و امکان خریدی آسان و متنوع، در اقدامی نوآورانه و
+                                                منحصر به‌فرد، از محصول جدید خود به‌نام «طراوت» رونمایی
+                                            </span>
+                                            <span class="d-flex   "> مشاهده جزئیات</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row">
+                                    <p class="col-12 text-center text-black font-weight-bolder ">
+                                        از آینده اعتبار بگیرید با (طراوت) خرید کنید </p>
+                                </div>
+                            </a>
+                            <!-- ****img2 -->
+                            <a class="col-lg-6 d-flex   text-decoration-none flex-column  " id="img1-News">
+                                <div class="card  rounded-3 ">
+                                    <div class="front col-12 rounded-3">
+                                        <img src="asset/img/9.jpg" alt="" class="col-12 rounded-3 h-100 ">
+
+                                    </div>
+                                    <div class=" back col-12rounded-3">
+                                        <img src="asset/img/8.jpg" alt="" class="col-12  rounded-3">
+                                        <div class=" rounded-3 ">
+                                            <span class="d-flex  text-white z-3 text-center">
+                                                در راستای ارزش‌آفرینی هر چه بیش‌تر و خریدی آسان و راحت برای مشتریان بانک
+                                                آینده، تنوع سبد محصولات بانک و همچنین جبران بخشی از خسارات وارده به
+                                                مشتریان، صنایع و مراکز خرید به علت شیوع بیماری کرونا، در...
+                                            </span>
+                                            <span class="d-flex   "> جزئیات طرح</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row">
+                                    <p class="col-12 text-center text-black font-weight-bolder ">
+                                        طرح آینده داران
+                                    </p>
+                                </div>
+                            </a>
+
+                        </section>
+
+
+                        <!-- ********* -->
+                        <section class="col-12 d-flex d-lg-none  ">
+                            <div class="window-1 col d-flex justify-content-center position-relative">
+                                <img src="asset/img/8.jpg" alt="" class="col-7 h-100">
+
+                                <ul class=" position-absolute  col-2 d-flex justify-content-center">
+
+                                    <li onclick="_slide1(this)" class="col-1 list-group-item mx-1 ">
+                                        <span class="d-flex p-1 bg-light rounded-2">
+                                            <img src="asset/img/9.jpg" alt="" class="col-1 opacity-0">
+                                        </span>
+
+                                    </li>
+                                    <li onclick="_slide1(this)" class="col-1 list-group-item mx-1 ">
+                                        <span class="d-flex p-1 bg-light rounded-2">
+                                            <img src="asset/img/8.jpg" alt="" class="col-1 opacity-0">
+                                        </span>
+
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-fluid bg-white  ">
+            <section class="container  mx-auto pt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center"> <strong class="text-success">سامانه کیلید</strong> بستری چابک برای
+                            بانکداری دیجیتال
+
+                        </h2>
+                        <p class="text-center mt-3 ">
+                            کیلید سامانه بانکداری دیجیتال جهت ارائه خدمات بانکی مبتنی بر حساب، به مشتریان حقیقی و حقوقی
+                            (چند امضایی) است
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <figure class="d-none d-lg-flex col-12">
+                        <img src="asset/img/phone-desk.png" alt="" class="col-12">
+
+                    </figure>
+                    <figure class="d-flex d-lg-none col-12 d-flex justify-content-center">
+                        <img src="asset/img/phone.png" alt="" class="col-10 ">
+
+                    </figure>
+                </div>
+
+
+            </section>
+        </section>
+
+        <section class="container-fluid bg-white pt-5 ">
+            <section class="container   mx-auto pt-5">
+                <div class="row  d-none d-lg-flex justify-content-between">
+                    <div class="col sipo sipo-1 rounded-3 ms-0">
+                        <div class="row ">
+                            <h4 class=" py-4">
+                                <span class="d-flex col-12  justify-content-center  ">ابزارها</span>
+                            </h4>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <ul class="col-10 d-flex flex-wrap text-white" dir="rtl">
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    آبانک
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    سفته و برات الکترونیکی
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    تلفن بانک
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    محاسبه سپرده آینده ساز
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    کارت ها
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    سامانه هدف
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    همراه کارت
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    همیار مشتری
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    سامانه کیلید
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    رمز یکبار مصرف
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <img src="asset/img/tools.png" alt="" class="col-2 ps-2 pb-0">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col sipo sipo-2 rounded-3 mx-5">
+                        <div class="row ">
+                            <h4 class=" py-4">
+                                <span class="d-flex col-12  justify-content-center  ">خدمات بانکی</span>
+                            </h4>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <ul class="col-10 d-flex flex-wrap text-white" dir="rtl">
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    تسهیلات
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    خدمات ریالی
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    سپرده های سرمایه گذاری
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    محاسبه اقساط تسهیلات
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    صندوق ضمانت سپرده ها
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    پرداخت قسط
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    پیشخوان مجازی
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    استعلام ضمانت نامه
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    نو بانک
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    رمز یکبار مصرف
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <img src="asset/img/bank.png" alt="" class="col-2 ps-2 pb-2">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col sipo sipo-3 rounded-3 me-0">
+                        <div class="row ">
+                            <h4 class=" py-4">
+                                <span class="d-flex col-12  justify-content-center  ">دسترسی سریع</span>
+                            </h4>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <ul class="col-10 d-flex flex-wrap text-white" dir="rtl">
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    شعب
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    تماس با آینده
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    مسئولیت اجتماعی
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    رسانه آینده
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    پیوندها
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    دعوت به همکاری
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    سوالات متداول
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    شفافیت و انتشار عمومی اطلاعات
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    سامانه کیلید
+                                </li>
+                                <li class="col-6 list-group-item pt-2">
+                                    <span class="">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </span>
+                                    رمز یکبار مصرف
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <img src="asset/img/electronic.png" alt="" class="col-2 ps-2 pb-0">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="row d-flex d-lg-none  justify-content-between p-3">
+                    <div class="col-12 col-sm ms-0   sipoB-1 ">
+                        <div class="  col-12 d-flex justify-content-center align-items-center p-5">
+                            <img src="asset/img/tools.png" alt="" class="col-8">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm mx-sm-5   sipoB-2 ">
+                        <div class="  col-12 d-flex justify-content-center align-items-center p-5">
+                            <img src="asset/img/bank.png" alt="" class="col-8">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm me-0   sipoB-3 ">
+                        <div class="  col-12 d-flex justify-content-center align-items-center p-5">
+                            <img src="asset/img/electronic.png" alt="" class="col-8">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </section>
+        </section>
+
+
+
+        <section class="container-fluid bg-white pt-5  d-flex d-lg-none">
+            <section class="container   mx-auto  border rounded-3" id="active">
+                <ul class="col-11 d-flex flex-wrap text-black" dir="rtl">
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        شعب
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        تماس با آینده
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        مسئولیت اجتماعی
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        رسانه آینده
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        پیوندها
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        دعوت به همکاری
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        سوالات متداول
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        شفافیت و انتشار عمومی اطلاعات
+                    </li>
+                    <li class="col-6 list-group-item pt-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        سامانه کیلید
+                    </li>
+                    <li class="col-6 list-group-item py-3">
+                        <span class="">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                        رمز یکبار مصرف
+                    </li>
+
+                </ul>
+                <div class="row">
+                    <div class="col-12">
+
+                    </div>
+
+                </div>
+
+            </section>
+        </section>
+
+        <!-- ***** -->
+        <section class="container-fluid  mt-5  d-flex " id="sliderimg1">
+            <section class="container   mx-auto  border  py-3 rounded-3  ">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="col-12 d-flex justify-content-evenly align-items-center ">
+                            <li class="col-1 list-group-item" id="pngfilter">
+                                <img src="asset/img/goal (1).png" alt="" class="col-12 ">
+                            </li>
+                            <li class="col-1 list-group-item" id="pngfilter">
+                                <img src="asset/img/cheque.png" alt="" class="col-12 ">
+                            </li>
+                            <li class="col-1 list-group-item" id="pngfilter">
+                                <img src="asset/img/kilid (1).png" alt="" class="col-12 ">
+                            </li>
+                            <li class="col-1 list-group-item" id="pngfilter">
+                                <img src="asset/img/laptop.png" alt="" class="col-12 ">
+                            </li>
+                            <li class="col-1 list-group-item" id="pngfilter">
+                                <img src="asset/img/mobile.png" alt="" class="col-12 ">
+                            </li>
+                            <li class="col-1 list-group-item" id="pngfilter">
+                                <img src="asset/img/sheba (1).png" alt="" class="col-12 ">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </section>
+
+
+        <!-- ****** -->
+
+    </main>
+
+
+    <footer>
+        <section class="container-fluid    d-flex " id="fotersec1">
+            <section class="container   mx-auto    rounded-3">
+                <!-- ***** -->
+                <div class="row d-none d-lg-flex  ">
+
+
+                    <div class="col-3   d-flex align-items-center">
+                        <div class="col-5 ">
+                            <img src="asset/img/contact-footer.png" alt="" class="col-12">
+                        </div>
+
+                        <div class="col-7 ">
+                            <ul class="col-12 d-flex h-100 justify-content-evenly align-items-center">
+                                <li class="col-3 list-group-item text-center">
+                                    <i class="bi bi-instagram"></i>
+                                </li>
+                                <li class="col-3 list-group-item text-center">
+                                    <i class="bi bi-linkedin"></i>
+                                </li>
+                                <li class="col-3 list-group-item text-center">
+                                    <i class="bi bi-twitter"></i>
+                                </li>
+                                <li class="col-3 list-group-item text-center">
+                                    <i class="bi bi-telegram"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- *** -->
+                    <div class="col-6    d-flex ">
+                        <div class="col-4  d-flex align-items-center ">
+                            <span class="border-bottom border-1 border col-12">
+
+                            </span>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-center ">
+                            <img src="asset/img/text.png" alt="" class="col-12">
+                        </div>
+                        <div class="col-4  d-flex align-items-center">
+                            <span class="border-bottom border-1 border col-12">
+                        </div>
+                    </div>
+                    <!-- *** -->
+                    <div class="col-3   d-flex justify-content-center align-items-center">
+                        <p class="col-12 text-white text-end">
+                            .تمام حقوق مادی و معنوی این تارگاه متعلق به بانک آینده است
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="row d-lg-none  py-5">
+                    <div class="col-12">
+                        <div class="row  ">
+                            <div class="col-12 d-flex ">
+                                <div class="col-4  d-flex align-items-center ">
+                                    <span class="border-bottom border-1 border col-12">
+
+                                    </span>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center align-items-center ">
+                                    <img src="asset/img/text.png" alt="" class="col-12">
+                                </div>
+                                <div class="col-4  d-flex align-items-center">
+                                    <span class="border-bottom border-1 border col-12">
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="row  ">
+                            <div class="col-6 d-flex justify-content-start mt-3">
+
+                                <img src="asset/img/contact-footer.png" alt="" class="col-4">
+
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end mt-3">
+
+                                <ul class="col-10 col-md-8 d-flex h-100 justify-content-evenly align-items-center">
+                                    <li class="col-3 list-group-item text-center">
+                                        <i class="bi bi-instagram"></i>
+                                    </li>
+                                    <li class="col-3 list-group-item text-center">
+                                        <i class="bi bi-linkedin"></i>
+                                    </li>
+                                    <li class="col-3 list-group-item text-center">
+                                        <i class="bi bi-twitter"></i>
+                                    </li>
+                                    <li class="col-3 list-group-item text-center">
+                                        <i class="bi bi-telegram"></i>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="row   ">
+                            <div class="col-12 d-flex justify-content-center mt-3">
+
+                                <div class="col-12 col-md-6   d-flex justify-content-center align-items-center">
+                                    <p class="col-12 text-white text-center">
+                                        .تمام حقوق مادی و معنوی این تارگاه متعلق به بانک آینده است
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </footer>
+
+
+
+
+    <script src="asset/js/master.js"></script>
+</body>
+
+
+</html>
